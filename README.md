@@ -22,5 +22,5 @@ For the above options there is a corresponding showcase place that will show you
 7. Animation on color change
 8. Keyboard listner to change color
 
-# There is also a live link of the app demo at-
+# Live demo at-
 https://color-picker-by-maksudul-haque.netlify.app/
