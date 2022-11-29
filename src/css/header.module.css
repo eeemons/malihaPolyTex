@@ -1,0 +1,74 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.6s ease-in-out;
+  background: whitesmoke;
+}
+a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: crimson;
+}
+.logo {
+  padding: 5px;
+  cursor: pointer;
+  background-color: crimson;
+  width: fit-content;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.dark {
+  border-radius: 10px;
+  width: 70px;
+  transition: color 0.2s ease-in-out;
+}
+.dark:hover {
+  transform: none;
+  color: crimson;
+}
+
+.mobileNav {
+  display: none;
+  width: 100vw;
+}
+
+.darkMode {
+  background-color: #181818;
+}
+
+.darkMode a {
+  color: white;
+}
+
+.darkMode a:hover {
+  color: crimson;
+}
+
+.darkMode .dark {
+  border: 2px solid white;
+  color: white;
+}
+
+.darkMode .dark:hover {
+  color: crimson;
+}
+
+@media screen and (max-width: 392px) {
+  .navlinks {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+}

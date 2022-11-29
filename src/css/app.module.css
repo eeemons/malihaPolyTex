@@ -1,0 +1,122 @@
+:root {
+  --clr-boxOne: red;
+  --clr-boxTwo: green;
+  --clr-boxThree: blue;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.6s ease;
+  mix-blend-mode: difference;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.colorField {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+input {
+  border-radius: 5px;
+  margin: 20px;
+  caret-color: crimson;
+  height: 30px;
+  transition: all 0.6s ease-in-out;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.dark input::placeholder {
+  color: rgba(203, 168, 168, 0.855);
+}
+
+.dark input {
+  background: #404040;
+  border: 1px solid white;
+  color: white;
+  caret-color: crimson;
+}
+
+p {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.boxOne {
+  background: var(--clr-boxOne);
+  transition: all 0.8s ease;
+}
+
+.hoverOne {
+  transform: rotateX(180deg);
+}
+.hoverTwo {
+  transform: rotateY(180deg);
+}
+.hoverThree {
+  transform: rotateZ(180deg);
+}
+
+.boxTwo {
+  background: var(--clr-boxTwo);
+  transition: all 0.8s ease;
+}
+.boxThree {
+  background: var(--clr-boxThree);
+  transition: all 0.8s ease;
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: 2.5px solid black;
+  transition: 0.5s ease-in-out;
+}
+
+button > span {
+  display: inline-block;
+  color: crimson;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  transform: rotate(360deg);
+}
+
+.dark {
+  background: #15202b;
+}
+
+.dark p {
+  color: white;
+}
+
+.dark button {
+  border: 2.5px solid white;
+}
